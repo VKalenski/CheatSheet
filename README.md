@@ -59,7 +59,7 @@
 
 ### Minikube:
 
-Start administrative PowerShell  
+Start administrator PowerShell  
 
 |--|--|
 |--|--|
