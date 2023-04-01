@@ -5,6 +5,8 @@
 >[2. Minikube](#minikube)
 >
 
+---
+
 ### Git:
 
 
