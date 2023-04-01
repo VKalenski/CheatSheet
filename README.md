@@ -2,6 +2,8 @@
 
 >[1. Git](#git)
 >
+>[2. Minikube](#minikube)
+>
 
 ### Git:
 
@@ -53,7 +55,7 @@
 
 ---
 
-### Install minikube:
+### Minikube:
 
 Start administrative PowerShell  
 
