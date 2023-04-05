@@ -69,17 +69,21 @@ Start administrator PowerShell
 |Status|minikube status|--|
 |Dashboard|minikube dashboard|--|
 
+---
 
+### .NET:
 
-
-
-
-
-
-
-
-
-
+|--|--|
+|--|--|
+|View list with projects:|dotnet new --list|
+|Create .NET Web Api from the PowerShell:|dotnet new webapi|
+|Create .NET Web Api with name from the PowerShell:|dotnet new webapi -n ProjectName|
+|Create new .gitignore file:|dotnet new gitignore|
+|Create migration:|dotnet-ef migrations add 'New migrations'|
+|Update the database:|dotnet-ef database update|
+|За вкарване на няколко проекта в общ solution:|dotnet new sln|
+|За вкарване на няколко проекта в общ solution:|dotnet new sln --name MySolution|
+|--|--|
 
 
 
