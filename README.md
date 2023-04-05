@@ -84,11 +84,36 @@ Start administrator PowerShell
 |За вкарване на няколко проекта в общ solution:|dotnet new sln|
 |За вкарване на няколко проекта в общ solution:|dotnet new sln --name MySolution|
 |--|--|
-
-
-
-
-
+  
+---
+  
+### Docker:  
+  
+|Show Docker info:|docker info|
+|Show Docker version:|docker version|
+|Show Docker version:|docker -v (docker --version)|
+|Docker process status - show launched containers:|docker ps|
+|Docker process status - show all containers:|docker ps -a|
+|Show all images:|docker images|
+|Show all images:|docker image ls|
+|Docker build in current directory:|docker build -t xxx .|
+|Download current image:|docker pull ubuntu|
+|Download image with current version:|docker pull ubuntu:18.04|
+|Run current image with random name container:|docker run image|
+|Run current image with current name container:|docker run --name my-container my-image|
+|Show containers:|docker container ls|
+|Delete current image without container:|docker rmi image-name|
+|Delete current image with container:|docker rmi -f image-name|
+|Run container:|docker start my-container|
+|Pause container:|docker pause my-container|
+|Stop container:|docker stop my-container|
+|Stop container (hard):|docker kill my-ubuntu|
+|Show count of images, containers and ect:|docker system df|
+|Others:|docker-compose up|
+|--|docker-compose down|
+|--|docker run -it ubuntu|
+|--|docker network ls|
+|--|--|
 
 
 
