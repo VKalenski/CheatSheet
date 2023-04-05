@@ -7,7 +7,8 @@
 >[3. .NET](#net)
 >
 >[4. Docker](#docker)
-
+>
+>[5. Kubernetes (K8s)](#kubernetes)
 
 ---
 
@@ -127,7 +128,9 @@ Start administrator PowerShell
 Start PowerShell
   
 Install kubectl: ...
-  
+
+|--|--|
+|--|--|  
 |Get help:|kubectl version|
 |Show info for cluster:|kubectl cluster-info|
 |Explain namespace:|kubectl describe namespace|
