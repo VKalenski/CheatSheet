@@ -13,7 +13,6 @@
 
 ### Git:
 
-
 |--|--|
 |--|--|
 |```Проверка на данните:```|**git config --list**|
@@ -121,5 +120,54 @@ Start administrator PowerShell
 |--|docker network ls|
 |--|--|
 
+---
+  
+### Kubernetes:
 
-
+Start PowerShell
+  
+Install kubectl: ...
+  
+|Get help:|kubectl version|
+|Show info for cluster:|kubectl cluster-info|
+|Explain namespace:|kubectl describe namespace|
+|Show all namespaces:|kubectl get namespaces|
+|Show all namespaces:|kubectl get ns|
+|Show all services:|kubectl get services|
+|--|kubectl describe service <name-service>|
+|Explain pods:|kubectl describe pods --namespace kube-system|
+|--|kubectl logs <name-pod>|
+|Show deployments:|kubectl get deployment|
+|--|kubectl rollout restart deploy <name-deploy>|
+|Apply .yml file:|kubectl apply -f .\xxx.yml|  
+|--|--|
+|--|--|
+|--|--|
+|--|--|  
+|--|--|
+|--|--|
+|--|--|
+|--|--|  
+|--|--|
+|--|--|
+|--|--|
+|--|--|  
+|--|--|
+|--|--|
+|--|--|
+|--|--|  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
