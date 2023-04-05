@@ -4,6 +4,10 @@
 >
 >[2. Minikube](#minikube)
 >
+>[3. .NET](#net)
+>
+>[4. Docker](#docker)
+
 
 ---
 
@@ -88,7 +92,9 @@ Start administrator PowerShell
 ---
   
 ### Docker:  
-  
+
+|--|--|
+|--|--|
 |Show Docker info:|docker info|
 |Show Docker version:|docker version|
 |Show Docker version:|docker -v (docker --version)|
