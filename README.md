@@ -8,8 +8,10 @@
 >
 >[4. Docker](#docker)
 >
->[5. Kubernetes (K8s)](#kubernetes)
-
+>[5. Azure](#azure)
+>
+>[6. Kubernetes (K8s)](#kubernetes)
+>
 ---
 
 ### Git:
