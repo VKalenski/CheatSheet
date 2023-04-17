@@ -137,32 +137,59 @@ Start administrator PowerShell
 
 ---
 
-### Azure Portal: 
-https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
-  
+### Azure Portal:
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+  
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
 
-|--|--|
+Start PowerShell
+
+
+Table for ```INSTALL```, ```UPDATE``` and ```LOGIN``` commands:
+
+|Description|Commands|
 |--|--|
 |Инсталиране на Azure CLI:|az aks install-cli|
 |Проверка за инсталация:|az|
 |Проверка на версията:|az version|
 |Ъпгрейд на версията:|az upgrade|
-|Вход в Azure Portal:|az login|
+|Log in Azure Portal:|az login|
+|Log in to the container registry:|az acr login --name myNameOfAcr|
+||az aks get-upgrades --name euroins-aks-staging --resource-group euroins-rg-staging|
+||az aks upgrade --kubernetes-version 1.24.9 --name euroins-aks-staging --resource-group euroins-rg-staging|
+||az aks nodepool upgrade --cluster-name euroins-aks-staging -g euroins-rg-staging -n agentpool|
+||az aks upgrade --resource-group euroins-rg-staging --name euroins-aks-staging --kubernetes-version 1.24.9|
+||az aks get-upgrades --resource-group myResourceGroup --name myAKSCluster --output table|
+
+
+Table for ```CREATE``` commands:
+
+|Description|Commands|
+|--|--|
 |Create a resource group:|az group create --name myResourceGroup --location westeurope|
 |Create an Azure Container Registry:|az acr create --resource-group myResourceGroup --name shoppingacr --sku Basic|
+|Create AKS cluster with attaching ACR:|az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --generate-ssh-keys --attach-acr myNameOfAcr|
+
+
+|Description|Commands|
+|--|--|
 |Enable Admin Account for ACR Pull:|az acr update -n shoppingacr --admin-enabled true|
-|Log in to the container registry:|az acr login --name shoppingacr|
+
 |Get the login server address:|az acr list --resource-group myResourceGroup --query "[].{acrLoginServer:loginServer}" --output table|
 |List images in registry:|az acr repository list --name shoppingacr --output table|
 |See tags|az acr repository show-tags --name shoppingacr --repository shoppingclient --output table|
 |Проверка на клъстърите в K8s:|az aks list|
-|Create AKS cluster with attaching ACR:|az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --generate-ssh-keys --attach-acr shoppingacr|
+
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
 |Clean All AKS and Azure Resources:|az group delete --name myResourceGroup --yes --no-wait|
 |--|kubectl get pdb -A|
+||az account set --subscription 69a94853-fcae-446b-917c-2bd00ba3e3ea|
+||az aks get-credentials --resource-group cloud-shell-storage-westeurope --name vk-aks-dev|
+||az aks get-credentials --admin --name MyManagedCluster --resource-group MyResourceGroup|
+||az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|
+||az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
+||kubectl get pdb -A|
 
 ---
 
@@ -184,7 +211,7 @@ Table for ```INSTALL``` and ```LOGIN``` commands:
 |Connect to cluster using kubectl:|az aks get-credentials --resource-group myResourceGroup --name myAKSCluster|
 |Show info for cluster:|kubectl cluster-info|
 
-***
+
 Table for ```GET``` commands:
 
 |Description|Command|
@@ -193,13 +220,18 @@ Table for ```GET``` commands:
 |Show all namespaces:|kubectl get ns|
 |Show all nodes:|kubectl get nodes|
 |Show all deployments:|kubectl get deployment|
+|Show all deployments from current namespace:|kubectl get deployment -n dev|
 |Show all replicasets:|kubectl get replicaset|
+|Show all replicasets from current namespace:|kubectl get replicaset -n dev|
 |Show all services:|kubectl get services|
 |Show all services:|kubectl get svc|
+|Show all services from current namespace:|kubectl get svc -n dev|
 |Show all pods:|kubectl get pods|
+|Show all pods from current namespace:|kubectl get pods -n dev|
 |Show all pods:|kubectl get pods --watch|
 |Show all:|kubectl get all|
-  
+
+
 Table for ```DESCRIBE``` commands:
 
 |Description|Command|
@@ -209,6 +241,7 @@ Table for ```DESCRIBE``` commands:
 |Explain pod:|kubectl describe <pod-name>|
 |Explain pods:|kubectl describe pods --namespace kube-system|
 
+
 Table for ```LOGS``` commands:
 
 |Description|Command|
@@ -216,6 +249,7 @@ Table for ```LOGS``` commands:
 |--|kubectl logs <name-deployment>|
 |--|kubectl logs <name-service>|
 |--|kubectl logs <name-pod>|
+
 
 Table for ```OTHERS``` commands
 
@@ -229,6 +263,4 @@ Table for ```OTHERS``` commands
 |--|kubectl config use-context gcpcluster-k8s-1|
 |--|kubectl delete deployment swn-nginx|
 |--|kubectl create deployment mongo-depl --image=mongo|
-
-
 |--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
