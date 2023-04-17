@@ -82,7 +82,9 @@ Start administrator PowerShell
 |--|--|
 |--|--|
 |View list with projects:|dotnet new --list|
+|Create .NET MVC from the PowerShell:|dotnet new mvc|
 |Create .NET Web Api from the PowerShell:|dotnet new webapi|
+|Create .NET MVC with name from the PowerShell:|dotnet new mvc -n ProjectName|
 |Create .NET Web Api with name from the PowerShell:|dotnet new webapi -n ProjectName|
 |Create new .gitignore file:|dotnet new gitignore|
 |Create migration:|dotnet-ef migrations add 'New migrations'|
@@ -90,20 +92,21 @@ Start administrator PowerShell
 |За вкарване на няколко проекта в общ solution:|dotnet new sln|
 |За вкарване на няколко проекта в общ solution:|dotnet new sln --name MySolution|
 |--|--|
-  
+
 ---
-  
+
 ### Docker:  
 
 |--|--|
 |--|--|
+|Проверка за инсталация:|docker|
 |Show Docker info:|docker info|
 |Show Docker version:|docker version|
 |Show Docker version:|docker -v (docker --version)|
 |Docker process status - show launched containers:|docker ps|
 |Docker process status - show all containers:|docker ps -a|
-|Show all images:|docker images|
 |Show all images:|docker image ls|
+|Show all images:|docker images|
 |Docker build in current directory:|docker build -t xxx .|
 |Download current image:|docker pull ubuntu|
 |Download image with current version:|docker pull ubuntu:18.04|
@@ -145,14 +148,14 @@ https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
 |--|kubectl get pdb -A|
-  
+
 ---
-  
+
 ### Kubernetes: 
 https://kubernetes.io/docs/reference/kubectl/
 
 Start PowerShell
-  
+
 Install kubectl: ...
 
 |--|--|
