@@ -104,7 +104,9 @@ Start administrator PowerShell
 |Show Docker version:|docker version|
 |Show Docker version:|docker -v (docker --version)|
 |Docker process status - show launched containers:|docker ps|
+|List all containers (only IDs):|docker ps -aq|
 |Docker process status - show all containers:|docker ps -a|
+|Stop all running containers:|docker stop $(docker ps -aq)|
 |Show all images:|docker image ls|
 |Show all images:|docker images|
 |Docker build in current directory:|docker build -t xxx .|
@@ -113,6 +115,10 @@ Start administrator PowerShell
 |Run current image with random name container:|docker run image|
 |Run current image with current name container:|docker run --name my-container my-image|
 |Show containers:|docker container ls|
+||docker rmi $(docker images -q) -f|
+|Remove all containers:|docker rm $(docker ps -aq)|
+|Remove all images:|docker rmi $(docker images -q)|
+|Remove all none images:|docker system prune|
 |Delete current image without container:|docker rmi image-name|
 |Delete current image with container:|docker rmi -f image-name|
 |Run container:|docker start my-container|
@@ -120,7 +126,9 @@ Start administrator PowerShell
 |Stop container:|docker stop my-container|
 |Stop container (hard):|docker kill my-ubuntu|
 |Show count of images, containers and ect:|docker system df|
-|Others:|docker-compose up|
+|Run multiple container:|docker-compose up|
+||docker-compose -f docker-compose.yaml -f docker-compose-infrastructure.yaml up --build|
+||docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build|
 |--|docker-compose down|
 |--|docker run -it ubuntu|
 |--|docker network ls|
@@ -131,6 +139,9 @@ Start administrator PowerShell
 
 ### Azure Portal: 
 https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
+  
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
 
 |--|--|
 |--|--|
@@ -144,9 +155,13 @@ https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 |Enable Admin Account for ACR Pull:|az acr update -n shoppingacr --admin-enabled true|
 |Log in to the container registry:|az acr login --name shoppingacr|
 |Get the login server address:|az acr list --resource-group myResourceGroup --query "[].{acrLoginServer:loginServer}" --output table|
+|List images in registry:|az acr repository list --name shoppingacr --output table|
+|See tags|az acr repository show-tags --name shoppingacr --repository shoppingclient --output table|
 |Проверка на клъстърите в K8s:|az aks list|
+|Create AKS cluster with attaching ACR:|az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --generate-ssh-keys --attach-acr shoppingacr|
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
+|Clean All AKS and Azure Resources:|az group delete --name myResourceGroup --yes --no-wait|
 |--|kubectl get pdb -A|
 
 ---
@@ -160,27 +175,31 @@ Install kubectl: ...
 
 |--|--|
 |--|--|
+|Install the Kubernetes CLI:|az aks install-cli|
 |Проверка на инсталацията:|kubectl|
 |Проверка на версията:|kubectl version|
 |Проверка на версията:|kubectl version --short|
 |Проверка на версията:|kubectl version --output=yaml|
 |Проверка на версията:|kubectl version --output=json|
+|Connect to cluster using kubectl:|az aks get-credentials --resource-group myResourceGroup --name myAKSCluster|
 |Show info for cluster:|kubectl cluster-info|
+|Show all:|kubectl get all|
+|Show all nodes:|kubectl get nodes|
 |Explain namespace:|kubectl describe namespace|
 |Show all namespaces:|kubectl get namespaces|
 |Show all namespaces:|kubectl get ns|
 |Show all services:|kubectl get services|
-|--|kubectl describe service <name-service>|
+|Explain services:|kubectl describe service <name-service>|
 |Explain pods:|kubectl describe pods --namespace kube-system|
 |--|kubectl logs <name-pod>|
 |Show deployments:|kubectl get deployment|
 |--|kubectl rollout restart deploy <name-deploy>|
 |Apply .yml file:|kubectl apply -f .\xxx.yml|  
-|--|--|
-|--|--|
-|--|--|
-|--|--|  
-|--|--|
+|Deploy microservices to AKS:|kubectl apply -f .\aks\|
+
+|--|kubectl config get-contexts|
+|--|kubectl config current-context|  
+|--|kubectl config use-context gcpcluster-k8s-1|
 |--|--|
 |--|--|
 |--|--|  
