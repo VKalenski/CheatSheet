@@ -1,4 +1,4 @@
-# Commands Documentation 
+# Commands
 
 >[1. Git](#git)
 >
@@ -62,7 +62,7 @@
 |--|--|
 
 ---
-
+### [🔼 Back to top](#commands)
 ---
 
 ### Minikube:
@@ -78,7 +78,7 @@ Start administrator PowerShell
 |Dashboard|minikube dashboard|--|
 
 ---
-
+### [🔼 Back to top](#commands)
 ---
 
 ### .NET:
@@ -98,7 +98,7 @@ Start administrator PowerShell
 |--|--|
 
 ---
-
+### [🔼 Back to top](#commands)
 ---
 
 ### Docker:  
@@ -142,7 +142,7 @@ Start administrator PowerShell
 |Tag your images:|docker tag shoppingclient:latest shoppingacr.azurecr.io/shoppingclient:v1|
 
 ---
-
+### [🔼 Back to top](#commands)
 ---
 
 ### Azure:
@@ -204,7 +204,7 @@ Table for ```OTHER``` commands:
 ||kubectl get pdb -A|
 
 ---
-
+### [🔼 Back to top](#commands)
 ---
 
 ### Kubernetes: 
