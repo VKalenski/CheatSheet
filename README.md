@@ -19,7 +19,7 @@
 |Description|Commands|
 |--|--|
 |Проверка на данните:|**git config --list**|
-|#Clone repo:|**git clone https://...**|
+|Clone repo:|**git clone https://...**|
 |Clone repo with current branch:|**git clone -b branch https://...**|
 |Git Initial:|**git init**|
 |Create file from CLI:|**touch text.txt**|
