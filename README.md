@@ -8,7 +8,7 @@
 >
 >[4. Docker](#docker)
 >
->[5. Azure](#azure)
+>[5. Azure](#azureportal)
 >
 >[6. Kubernetes (K8s)](#kubernetes)
 >
@@ -171,7 +171,7 @@ https://kubernetes.io/docs/reference/kubectl/
 
 Start PowerShell
 
-Install kubectl: ...
+Table for ```INSTALL``` and ```LOGIN``` commands:  
 
 |Description|Command|
 |--|--|
@@ -185,35 +185,42 @@ Install kubectl: ...
 |Show info for cluster:|kubectl cluster-info|
 
 ***
-Table for GET commands:
+Table for ```GET``` commands:
 
 |Description|Command|
 |--|--|
 |Show all namespaces:|kubectl get namespaces|
-|Show all nodes:|kubectl get nodes|
-|Show all namespaces:|kubectl get namespaces|
 |Show all namespaces:|kubectl get ns|
-|Show all services:|kubectl get services|
-|Show all services:|kubectl get svc|
+|Show all nodes:|kubectl get nodes|
 |Show all deployments:|kubectl get deployment|
 |Show all replicasets:|kubectl get replicaset|
+|Show all services:|kubectl get services|
+|Show all services:|kubectl get svc|
 |Show all pods:|kubectl get pods|
 |Show all pods:|kubectl get pods --watch|
 |Show all:|kubectl get all|
   
-Table for DESCRIBE commands:
+Table for ```DESCRIBE``` commands:
 
 |Description|Command|
 |--|--|
 |Explain namespace:|kubectl describe namespace|
-|Explain services:|kubectl describe service <name-service>|
+|Explain service:|kubectl describe service <name-service>|
+|Explain pod:|kubectl describe <pod-name>|
 |Explain pods:|kubectl describe pods --namespace kube-system|
-  
-Table for OTHERS commands
+
+Table for ```LOGS``` commands:
 
 |Description|Command|
 |--|--|
+|--|kubectl logs <name-deployment>|
+|--|kubectl logs <name-service>|
 |--|kubectl logs <name-pod>|
+
+Table for ```OTHERS``` commands
+
+|Description|Command|
+|--|--|
 |--|kubectl rollout restart deploy <name-deploy>|
 |Apply .yml file:|kubectl apply -f .\xxx.yml|  
 |Deploy microservices to AKS:|kubectl apply -f .\aks\|
@@ -221,9 +228,7 @@ Table for OTHERS commands
 |--|kubectl config current-context|  
 |--|kubectl config use-context gcpcluster-k8s-1|
 |--|kubectl delete deployment swn-nginx|
-
-|--|kubectl logs nginx-depl-5c8bf76b5b-tzv2k|  
 |--|kubectl create deployment mongo-depl --image=mongo|
-|--|kubectl describe pod mongo-depl-5fd6b7d4b4-6xzjd|
-|--|kubectl logs mongo-depl-5fd6b7d4b4-6xzjd|
+
+
 |--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
