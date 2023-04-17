@@ -282,3 +282,7 @@ Table for ```OTHERS``` commands
 |--|kubectl delete deployment swn-nginx|
 |--|kubectl create deployment mongo-depl --image=mongo|
 |--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
+
+---
+### [🔼 Back to top](#commands)
+---
