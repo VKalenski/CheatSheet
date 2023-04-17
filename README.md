@@ -129,9 +129,12 @@ Start administrator PowerShell
 
 |--|--|
 |--|--|
-|Инсталиране на azure cli|az aks install-cli|
-|Проверка за инсталация|az|  
-|Налични K8s|az aks list|
+|Инсталиране на Azure CLI|az aks install-cli|
+|Проверка за инсталация|az|
+|Проверка на версията|az version|
+|Ъпгрейд на версията|az upgrade|
+|Вход в Azure Portal|az login|
+|Налични K8s |az aks list|
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
 ||kubectl get pdb -A|
