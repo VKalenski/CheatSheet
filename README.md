@@ -8,7 +8,7 @@
 >
 >[4. Docker](#docker)
 >
->[5. Azure](#azureportal)
+>[5. Azure](#azure)
 >
 >[6. Kubernetes (K8s)](#kubernetes)
 >
@@ -16,10 +16,10 @@
 
 ### Git:
 
-|--|--|
+|Description|Commands|
 |--|--|
 |Проверка на данните:|**git config --list**|
-|Clone repo:|**git clone https://...**|
+|#Clone repo:|**git clone https://...**|
 |Clone repo with current branch:|**git clone -b branch https://...**|
 |Git Initial:|**git init**|
 |Create file from CLI:|**touch text.txt**|
@@ -69,7 +69,7 @@
 
 Start administrator PowerShell  
 
-|--|--|
+|Description|Commands|
 |--|--|
 |First|choco install minikube|--|
 |Second|Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))|https://minikube.sigs.k8s.io/docs/start/|
@@ -145,13 +145,15 @@ Start administrator PowerShell
 
 ---
 
-### Azure Portal:
+### Azure:
+
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
   
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
 
 Start PowerShell
 
+---
 
 Table for ```INSTALL```, ```UPDATE``` and ```LOGIN``` commands:
 
@@ -186,7 +188,6 @@ Table for ```OTHER``` commands:
 |Description|Commands|
 |--|--|
 |Enable Admin Account for ACR Pull:|az acr update -n shoppingacr --admin-enabled true|
-
 |Get the login server address:|az acr list --resource-group myResourceGroup --query "[].{acrLoginServer:loginServer}" --output table|
 |List images in registry:|az acr repository list --name shoppingacr --output table|
 |See tags|az acr repository show-tags --name shoppingacr --repository shoppingclient --output table|
