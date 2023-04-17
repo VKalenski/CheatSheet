@@ -183,12 +183,15 @@ Install kubectl: ...
 |Проверка на версията:|kubectl version --output=json|
 |Connect to cluster using kubectl:|az aks get-credentials --resource-group myResourceGroup --name myAKSCluster|
 |Show info for cluster:|kubectl cluster-info|
-|Show all:|kubectl get all|
-|Show all nodes:|kubectl get nodes|
-|Explain namespace:|kubectl describe namespace|
 |Show all namespaces:|kubectl get namespaces|
+|Show all nodes:|kubectl get nodes|
 |Show all namespaces:|kubectl get ns|
 |Show all services:|kubectl get services|
+|Show all services:|kubectl get svc|
+|Show all deployments:|kubectl get deployment|
+|Show all replicasets:|kubectl get replicaset|
+|Show all:|kubectl get all|
+|Explain namespace:|kubectl describe namespace|
 |Explain services:|kubectl describe service <name-service>|
 |Explain pods:|kubectl describe pods --namespace kube-system|
 |--|kubectl logs <name-pod>|
@@ -196,17 +199,16 @@ Install kubectl: ...
 |--|kubectl rollout restart deploy <name-deploy>|
 |Apply .yml file:|kubectl apply -f .\xxx.yml|  
 |Deploy microservices to AKS:|kubectl apply -f .\aks\|
-
 |--|kubectl config get-contexts|
 |--|kubectl config current-context|  
 |--|kubectl config use-context gcpcluster-k8s-1|
-|--|--|
-|--|--|
-|--|--|  
-|--|--|
-|--|--|
-|--|--|
-|--|--|  
+|--|kubectl delete deployment swn-nginx|
+|--|kubectl get pods --watch|
+|--|kubectl logs nginx-depl-5c8bf76b5b-tzv2k|  
+|--|kubectl create deployment mongo-depl --image=mongo|
+|--|kubectl describe pod mongo-depl-5fd6b7d4b4-6xzjd|
+|--|kubectl logs mongo-depl-5fd6b7d4b4-6xzjd|
+|--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|  
 |--|--|
 |--|--|
 |--|--|
