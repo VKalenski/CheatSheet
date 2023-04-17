@@ -183,6 +183,10 @@ Install kubectl: ...
 |Проверка на версията:|kubectl version --output=json|
 |Connect to cluster using kubectl:|az aks get-credentials --resource-group myResourceGroup --name myAKSCluster|
 |Show info for cluster:|kubectl cluster-info|
+  
+Table for GET commands:
+|--|--|
+|--|--|
 |Show all namespaces:|kubectl get namespaces|
 |Show all nodes:|kubectl get nodes|
 |Show all namespaces:|kubectl get ns|
@@ -191,11 +195,18 @@ Install kubectl: ...
 |Show all deployments:|kubectl get deployment|
 |Show all replicasets:|kubectl get replicaset|
 |Show all:|kubectl get all|
+  
+Table for DESCRIBE commands:
+|--|--|
+|--|--|
 |Explain namespace:|kubectl describe namespace|
 |Explain services:|kubectl describe service <name-service>|
 |Explain pods:|kubectl describe pods --namespace kube-system|
+  
+Table for OTHERS commands
+|--|--|
+|--|--|
 |--|kubectl logs <name-pod>|
-|Show deployments:|kubectl get deployment|
 |--|kubectl rollout restart deploy <name-deploy>|
 |Apply .yml file:|kubectl apply -f .\xxx.yml|  
 |Deploy microservices to AKS:|kubectl apply -f .\aks\|
@@ -208,23 +219,4 @@ Install kubectl: ...
 |--|kubectl create deployment mongo-depl --image=mongo|
 |--|kubectl describe pod mongo-depl-5fd6b7d4b4-6xzjd|
 |--|kubectl logs mongo-depl-5fd6b7d4b4-6xzjd|
-|--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|  
-|--|--|
-|--|--|
-|--|--|
-|--|--|  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+|--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
