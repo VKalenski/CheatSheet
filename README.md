@@ -185,6 +185,7 @@ Install kubectl: ...
 |Show info for cluster:|kubectl cluster-info|
   
 Table for GET commands:
+
 |--|--|
 |--|--|
 |Show all namespaces:|kubectl get namespaces|
@@ -197,6 +198,7 @@ Table for GET commands:
 |Show all:|kubectl get all|
   
 Table for DESCRIBE commands:
+
 |--|--|
 |--|--|
 |Explain namespace:|kubectl describe namespace|
@@ -204,6 +206,7 @@ Table for DESCRIBE commands:
 |Explain pods:|kubectl describe pods --namespace kube-system|
   
 Table for OTHERS commands
+
 |--|--|
 |--|--|
 |--|kubectl logs <name-pod>|
