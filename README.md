@@ -121,35 +121,47 @@ Start administrator PowerShell
 |--|docker-compose down|
 |--|docker run -it ubuntu|
 |--|docker network ls|
-|--|--|
+|Tag your images:|docker tag shoppingapi:latest shoppingacr.azurecr.io/shoppingapi:v1|
+|Tag your images:|docker tag shoppingclient:latest shoppingacr.azurecr.io/shoppingclient:v1|
 
 ---
 
-### Azure:
+### Azure Portal: 
+https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
 |--|--|
 |--|--|
-|Инсталиране на Azure CLI|az aks install-cli|
-|Проверка за инсталация|az|
-|Проверка на версията|az version|
-|Ъпгрейд на версията|az upgrade|
-|Вход в Azure Portal|az login|
-|Налични K8s |az aks list|
+|Инсталиране на Azure CLI:|az aks install-cli|
+|Проверка за инсталация:|az|
+|Проверка на версията:|az version|
+|Ъпгрейд на версията:|az upgrade|
+|Вход в Azure Portal:|az login|
+|Create a resource group:|az group create --name myResourceGroup --location westeurope|
+|Create an Azure Container Registry:|az acr create --resource-group myResourceGroup --name shoppingacr --sku Basic|
+|Enable Admin Account for ACR Pull:|az acr update -n shoppingacr --admin-enabled true|
+|Log in to the container registry:|az acr login --name shoppingacr|
+|Get the login server address:|az acr list --resource-group myResourceGroup --query "[].{acrLoginServer:loginServer}" --output table|
+|Проверка на клъстърите в K8s:|az aks list|
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
-||kubectl get pdb -A|
+|--|kubectl get pdb -A|
   
 ---
   
-### Kubernetes:
+### Kubernetes: 
+https://kubernetes.io/docs/reference/kubectl/
 
 Start PowerShell
   
 Install kubectl: ...
 
 |--|--|
-|--|--|  
-|Get help:|kubectl version|
+|--|--|
+|Проверка на инсталацията:|kubectl|
+|Проверка на версията:|kubectl version|
+|Проверка на версията:|kubectl version --short|
+|Проверка на версията:|kubectl version --output=yaml|
+|Проверка на версията:|kubectl version --output=json|
 |Show info for cluster:|kubectl cluster-info|
 |Explain namespace:|kubectl describe namespace|
 |Show all namespaces:|kubectl get namespaces|
