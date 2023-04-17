@@ -173,7 +173,7 @@ Start PowerShell
 
 Install kubectl: ...
 
-|--|--|
+|Description|Command|
 |--|--|
 |Install the Kubernetes CLI:|az aks install-cli|
 |Проверка на инсталацията:|kubectl|
@@ -183,23 +183,27 @@ Install kubectl: ...
 |Проверка на версията:|kubectl version --output=json|
 |Connect to cluster using kubectl:|az aks get-credentials --resource-group myResourceGroup --name myAKSCluster|
 |Show info for cluster:|kubectl cluster-info|
-  
+
+***
 Table for GET commands:
 
-|--|--|
+|Description|Command|
 |--|--|
 |Show all namespaces:|kubectl get namespaces|
 |Show all nodes:|kubectl get nodes|
+|Show all namespaces:|kubectl get namespaces|
 |Show all namespaces:|kubectl get ns|
 |Show all services:|kubectl get services|
 |Show all services:|kubectl get svc|
 |Show all deployments:|kubectl get deployment|
 |Show all replicasets:|kubectl get replicaset|
+|Show all pods:|kubectl get pods|
+|Show all pods:|kubectl get pods --watch|
 |Show all:|kubectl get all|
   
 Table for DESCRIBE commands:
 
-|--|--|
+|Description|Command|
 |--|--|
 |Explain namespace:|kubectl describe namespace|
 |Explain services:|kubectl describe service <name-service>|
@@ -207,7 +211,7 @@ Table for DESCRIBE commands:
   
 Table for OTHERS commands
 
-|--|--|
+|Description|Command|
 |--|--|
 |--|kubectl logs <name-pod>|
 |--|kubectl rollout restart deploy <name-deploy>|
@@ -217,7 +221,7 @@ Table for OTHERS commands
 |--|kubectl config current-context|  
 |--|kubectl config use-context gcpcluster-k8s-1|
 |--|kubectl delete deployment swn-nginx|
-|--|kubectl get pods --watch|
+
 |--|kubectl logs nginx-depl-5c8bf76b5b-tzv2k|  
 |--|kubectl create deployment mongo-depl --image=mongo|
 |--|kubectl describe pod mongo-depl-5fd6b7d4b4-6xzjd|
