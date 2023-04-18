@@ -14,7 +14,7 @@
 >
 ---
 
-### Git:
+### ${\color{green}Git}$
 
 |Description|Commands|
 |--|--|
@@ -192,7 +192,7 @@ Table for ```OTHER``` commands:
 |List images in registry:|az acr repository list --name shoppingacr --output table|
 |See tags|az acr repository show-tags --name shoppingacr --repository shoppingclient --output table|
 |Проверка на клъстърите в K8s:|az aks list|
-|--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|  
+|--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table|
 |--|az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
 |Clean All AKS and Azure Resources:|az group delete --name myResourceGroup --yes --no-wait|
 |--|kubectl get pdb -A|
@@ -207,12 +207,12 @@ Table for ```OTHER``` commands:
 ### [🔼 Back to top](#commands)
 ---
 
-### Kubernetes: 
+### Kubernetes:
 https://kubernetes.io/docs/reference/kubectl/
 
 Start PowerShell
 
-Table for ```INSTALL``` and ```LOGIN``` commands:  
+Table for ```INSTALL``` and ```LOGIN``` commands:
 
 |Description|Command|
 |--|--|
