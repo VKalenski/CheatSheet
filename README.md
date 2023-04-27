@@ -1,4 +1,4 @@
-# Commands
+## Command Line Commands
 
 >[1. Git](#git)
 >
@@ -12,9 +12,20 @@
 >
 >[6. Kubernetes (K8s)](#kubernetes)
 >
+>[7. PowerShell](#powershell)
+>
+>[8. Linux](#linux)
+>
+
+---
+### [🔼 Back to top](#commands)
 ---
 
 ### Git:
+
+Start administrator PowerShell and Install GitHub CLI: https://github.com/cli/cli ---> Chocolatey: ```choco install gh```
+
+---
 
 Table for ```BASIC``` commands:
 
@@ -39,8 +50,8 @@ Table for ```CLONE```, ```STATUS```, ```ADD```, ```COMMIT``` and ```PUSH``` git 
 |Add all modified/created files:                  |git add .|
 |Add all modified/created files:                  |git add -A|
 |Add current file:                                |git add file.cs|
-|Create commit with one message:                  |git commit -m "Text"|
-|Create commit with more than one message:        |git commit -m "Text" -m "Text"|
+|Create commit with one message:                  |git commit -m "Message"|
+|Create commit with more than one message:        |git commit -m "Message" -m "Message"|
 |Push file/s in current branch:                   |git push origin vk-branch|
 |Push file/s in current branch:                   |git push -u origin vk-branch|
 
@@ -89,7 +100,7 @@ Table for ```LOG``` commands:
 
 ### Minikube:
 
-Start administrator PowerShell  
+Start administrator PowerShell
 
 |Description|Commands|
 |--|--|
@@ -109,6 +120,7 @@ Start administrator PowerShell
 |--|--|
 |Check version:                                                         |dotnet --version|
 |View list with projects:                                               |dotnet new --list|
+|Run and build project:                                                 |dotnet run|
 
 ---
 
@@ -139,10 +151,20 @@ Table for ```MIGRATIONS``` commands:
 
 ---
 
-dotnet user-secrets init		
-dotnet user-secrets set "Password" "ususususu"
-dotnet run		
-dotnet new console -n ConsoleName
+Table for ```SECRETS``` commands:
+
+|Description|Commands|
+|--|--|
+|Initial create secret:                                                 |dotnet user-secrets init|
+|Set secret:                                                            |dotnet user-secrets set "Password" "ususususu"|
+
+---
+
+Table for ```ADD PACKAGES``` commands:
+
+|Description|Commands|
+|--|--|
+|||dotnet new console -n ConsoleName
 dotnet add package ...
 
 ---
@@ -207,7 +229,7 @@ Table for ```INSTALL```, ```UPDATE``` and ```LOGIN``` commands:
 
 |Description|Commands|
 |--|--|
-|Инсталиране на Azure CLI:                |az aks install-cli|
+|Install Azure CLI:                       |az aks install-cli|
 |Проверка за инсталация:                  |az|
 |Проверка на версията:                    |az version|
 |Ъпгрейд на версията:                     |az upgrade|
@@ -264,7 +286,6 @@ Table for ```INSTALL``` and ```LOGIN``` commands:
 
 |Description|Command|
 |--|--|
-|Install the Kubernetes CLI:                    |az aks install-cli|
 |Проверка на инсталацията:                      |kubectl|
 |Проверка на версията:                          |kubectl version|
 |Проверка на версията:                          |kubectl version --short|
@@ -279,20 +300,30 @@ Table for ```GET``` commands:
 
 |Description|Command|
 |--|--|
-|Show all namespaces:                           |kubectl get namespaces|
-|Show all namespaces:                           |kubectl get ns|
-|Show all nodes:                                |kubectl get nodes|
-|Show all deployments:                          |kubectl get deployment|
-|Show all deployments from current namespace:   |kubectl get deployment -n dev|
-|Show all replicasets:                          |kubectl get replicaset|
-|Show all replicasets from current namespace:   |kubectl get replicaset -n dev|
-|Show all services:                             |kubectl get services|
-|Show all services:                             |kubectl get svc|
-|Show all services from current namespace:      |kubectl get svc -n dev|
-|Show all pods:                                 |kubectl get pods|
-|Show all pods from current namespace:          |kubectl get pods -n dev|
-|Show all pods:                                 |kubectl get pods --watch|
-|Show all:                                      |kubectl get all|
+|Show all namespaces:                               |kubectl get namespaces|
+|Show all namespaces:                               |kubectl get ns|
+|Show all service accounts:                         |kubectl get serviceAccounts|
+|Show all service accounts from current namespace:  |kubectl get serviceAccounts -n dev|
+|Show all nodes:                                    |kubectl get nodes|
+|Show all deployments:                              |kubectl get deployment|
+|Show all deployments from current namespace:       |kubectl get deployment -n dev|
+|Show all replicasets:                              |kubectl get replicaset|
+|Show all replicasets from current namespace:       |kubectl get replicaset -n dev|
+|Show all services:                                 |kubectl get services|
+|Show all services:                                 |kubectl get svc|
+|Show all services from current namespace:          |kubectl get svc -n dev|
+|Show all pods:                                     |kubectl get pods|
+|Show all pods from current namespace:              |kubectl get pods -n dev|
+|Show all pods from current namespace extend:       |kubectl get pods -n dev -o wide|
+|Show all pods from all namespace:                  |kubectl get pods --all-namespaces|
+|Show all pods from all namespace extend:           |kubectl get pods --all-namespaces -o wide|
+|Show all pods:                                     |kubectl get pods --watch|
+|Show all secrets:                                  |kubectl get secrets|
+|Show all secrets in current namespace:             |kubectl get secrets -n dev|
+|Show secret/token with current secret name:        |kubectl get secret default-token-htr5s -n dev|
+|Show secret/token with current secret name extend: |kubectl get secret default-token-htr5s -n dev -o json|
+|Show all in all namespaces:                        |kubectl get all|
+|Show all in current namespace:                     |kubectl get all -n dev|
 
 ---
 
@@ -330,9 +361,36 @@ Table for ```OTHERS``` commands
 |--|kubectl delete deployment swn-nginx|
 |--|kubectl create deployment mongo-depl --image=mongo|
 |--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
+||kubectl top pods -n dev|
 
 ---
 ### [🔼 Back to top](#commands)
+---
+
+### PowerShell:
+
+Start PowerShell
+
+Table for ```CHANGE``` commands:
+
+|Description|Command|
+|--|--|
+|Change kubectl to k command:                   |Set-Alias -Name k -Value kubectl|
+|Change docker to d command:                    |Set-Alias -Name d -Value docker|
+
+---
+### [🔼 Back to top](#commands)
+---
+
+### Linux:
+
+Table for ```CHANGE``` commands:
+
+|Description|Command|
+|--|--|
+|Change kubectl to k command:                   |alias k='kubectl'|
+|Change kubectl get pods to d command:          |alias kgp='kubectl get pods'|
+
 ---
 
 |Create file from CLI:|touch text.txt|
@@ -344,3 +402,5 @@ Table for ```OTHERS``` commands
 ||cd xx* - само част от името|
 ||az acr repository list -n euroins|
 ||code -r ConsoleName|
+az acr repository show --name euroins --repository vehicleservice
+az acr repository list -n euroins
