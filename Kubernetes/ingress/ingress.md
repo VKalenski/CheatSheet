@@ -19,22 +19,24 @@ To create/apply ingress in Azure Portal
 
 1. Open Project with VS Code
 2. Open Terminal (PowerShell)
-3. Set the cluster subscription:
+3. Login to your azure account:
+    - ```az login```
+4. Set the cluster subscription:
     - ```az account set --subscription 55cbe66a-c5c7-4346-8b22-cfe33157a0b0```
-4. Download cluster credentials:
+5. Download cluster credentials:
     - ```az aks get-credentials --resource-group euroins-rg-prod --name euroins-aks-prod```
-5. Create ingress file in k8s":
+6. Create ingress file in k8s":
     - ```kubectl create -f ingress-aks-NAMESPACE-FOLDER_NAME/NAMESPACE-ingress-FILE_NAME.yaml -n NAMESPACE```
     - ```kubectl create -f ingress-aks-dev-admin/dev-ingress-admin.yaml -n dev```
-6. If ingress file is only modified:
+7. If ingress file is only modified:
     - ```kubectl apply -f ingress-aks-NAMESPACE-FOLDER_NAME/NAMESPACE-ingress-FILE_NAME.yaml -n NAMESPACE```
     - ```kubectl apply -f ingress-aks-dev-admin/dev-ingress-admin.yaml -n dev```
-7. Check if ingress is created:
+8. Check if ingress is created:
     - ```kubectl get ingress -n dev```
-8. Describe for check ingress:
+9. Describe for check ingress:
     - ```kubectl describe ingress SERVICE_NAME-svc-NAMESPACE -n dev```
     - ```kubectl describe ingress admin-svc-dev -n dev```
-9. Edit ingress if is necessary:
+10. Edit ingress if is necessary:
     - ```kubectl edit ingress SERVICE_NAME-svc-NAMESPACE -n dev```
     - ```kubectl edit ingress admin-svc-dev -n dev```
 
