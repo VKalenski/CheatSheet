@@ -17,22 +17,24 @@ To create/apply deployment in Azure Portal
 
 1. Open Project with VS Code
 2. Open Terminal (PowerShell)
-3. Set the cluster subscription:
+3. Login to your azure account:
+    - ```az login```
+5. Set the cluster subscription:
     - ```az account set --subscription 55cbe66a-c5c7-4346-8b22-cfe33157a0b0```
-4. Download cluster credentials:
+6. Download cluster credentials:
     - ```az aks get-credentials --resource-group euroins-rg-prod --name euroins-aks-prod```
-5. Create deployment file in k8s":
+7. Create deployment file in k8s":
     - ```kubectl create -f Manifests/NAMESPACE/deployment.yaml -n NAMESPACE```
     - ```kubectl create -f Manifests/dev/deployment.yaml -n dev```
-6. If deployment file is only modified:
+8. If deployment file is only modified:
     - ```kubectl apply -f Manifests/NAMESPACE/deployment.yaml -n NAMESPACE```
     - ```kubectl apply -f Manifests/dev/deployment.yaml -n dev```
-7. Check if deployment is created:
+9. Check if deployment is created:
     - ```kubectl get deployment -n dev```
-8. Describe for check deployment:
+10. Describe for check deployment:
     - ```kubectl describe deployment SERVICE_NAME-deployment-NAMESPACE -n dev```
     - ```kubectl describe deployment admin-deployment-dev -n dev```
-9. Edit deployment if is necessary:
+11. Edit deployment if is necessary:
     - ```kubectl edit deployment SERVICE_NAME-deployment-NAMESPACE -n dev```
     - ```kubectl edit deployment admin-deployment-dev -n dev```
 
