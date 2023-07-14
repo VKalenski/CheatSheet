@@ -1,0 +1,22 @@
+# Template for Service with type: ClusterIP and protocol: TCP
+# Variables for change: SERVICE_NAME, EXAMPLENAME, NAMESPACE
+# SERVICE_NAME, LABEL_NAME, EXAMPLE_NAME ->
+# Rows for change/check ---> #
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: SERVICE_NAME-svc-NAMESPACE #
+  namespace: NAMESPACE
+  labels:
+    app: LABEL_NAME-NAMESPACE #
+spec:
+  selector:
+    app: APP_NAME-NAMESPACE #
+  type: ClusterIP
+  sessionAffinity: None
+  ports:
+  - name: EXAMPLE_NAME-NAMESPACE #
+    protocol: TCP
+    port: 8081
+    targetPort: 80

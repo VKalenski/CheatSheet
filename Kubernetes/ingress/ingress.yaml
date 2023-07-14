@@ -1,0 +1,32 @@
+# Template for Ingress
+# Variables for change: SERVICE_NAME, LABEL_NAME, NAMESPACE, HOST /DOMAIN_NAME: google.com/
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    description: Ingress for KEYCLOAK application http service.
+    nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/service-upstream: 'true'
+    nginx.ingress.kubernetes.io/upstream-vhost: SERVICE_NAME.NAMESPACE.svc.cluster.local #
+  labels:
+    app: LABEL_NAME-NAMESPACE #
+  name: SERVICE_NAME-svc-NAMESPACE #
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: HOST #
+    http:
+      paths:
+      - pathType: Prefix
+        path: '/'
+        backend:
+          service:
+            name: SERVICE_NAME-svc-NAMESPACE #
+            port:
+              number: 8080
+  tls:
+    - hosts:
+      - HOST #
+      secretName: SECRET_NAME-NAMESPACE-tls-secret #

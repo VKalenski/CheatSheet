@@ -1,0 +1,33 @@
+# Variables DEV
+# Variables for change: IMAGE_NAME, NAMESPACE
+# Rows for change/check ---> #
+
+variables:
+- name:  containerRegistry
+  value: 'euroins.azurecr.io' # Azure Portal
+
+- name:  imagePullSecret
+  value: 'NAMESPACE-aks-acr-secret' # Azure Portal
+
+- name:  dockerRegistryServiceConnection
+  value: 'dbffce28-2c76-488b-bcb7-99b4ddb0e078' # Name of the Docker Registry Service Connection, example: acr-aks-conn-dev
+
+- name:  imageRepository
+  value: 'IMAGE_NAME-NAMESPACE' #
+
+- name: dockerfilePath
+  value: '**/Dockerfile' #
+
+- name:  vmImageName
+  value: 'ubuntu-latest' #
+
+- name: tag
+  value: '$(Build.BuildId)'
+
+- group: dev-secrets
+- name: ConnectionStrings.DefaultConnection
+  value: $(psql-conn-str-dev) #
+
+- group: dev-appsettings
+- name: gRPC.SandboxUrl
+  value: $(sandbox-svc-stg) #

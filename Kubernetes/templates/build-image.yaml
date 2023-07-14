@@ -1,0 +1,21 @@
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+    - job: Build
+      displayName: Build
+      pool:
+        vmImage: $(vmImageName)
+      steps:
+      - task: Docker@2
+        inputs:
+          command: buildAndPush
+          repository: $(imageRepository)
+          dockerfile: $(dockerfilePath)
+          containerRegistry: $(dockerRegistryServiceConnection)
+          tags: |
+            $(tag)
+            latest      
+      - upload: Manifests
+        artifact: Manifests
+        displayName: 'Upload Artifact: Manifests'

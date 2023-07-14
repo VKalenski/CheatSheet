@@ -1,0 +1,28 @@
+# Deploy to Azure Kubernetes Service
+# Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+  branches:
+    include:
+      - development #
+      - qa #
+      - staging #
+      - main #
+
+resources:
+- repo: self
+
+variables:   
+  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/development') }}:
+    - template: templates/vars-dev.yaml #
+  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/staging') }}:
+    - template: templates/vars-qa.yaml #
+  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/staging') }}:
+    - template: templates/vars-stg.yaml #
+  - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/main') }}:
+    - template: templates/vars-main.yaml #
+
+stages:
+  - template: templates/transform-settings.yaml #
+  - template: templates/build-image.yaml #
