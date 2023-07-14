@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: CONTAINER_NAME-NAMESPACE #
-          image: K8S.azurecr.io/IMAGE_NAME-NAMESPACE #
+          image: CONTAINER_REGISTRY_NAME.azurecr.io/IMAGE_NAME-NAMESPACE #
           resources:
             requests:
               memory: "128Mi" #

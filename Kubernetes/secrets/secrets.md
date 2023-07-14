@@ -1,0 +1,4 @@
+### Kind Secrets (service.yaml)
+
+---
+
