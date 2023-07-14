@@ -15,22 +15,24 @@ To create/apply service in Azure Portal
 
 1. Open Project with VS Code
 2. Open Terminal (PowerShell)
-3. Set the cluster subscription:
+3. Login to your azure account:
+    - ```az login```
+4. Set the cluster subscription:
     - ```az account set --subscription 55cbe66a-c5c7-4346-8b22-cfe33157a0b0```
-4. Download cluster credentials:
+5. Download cluster credentials:
     - ```az aks get-credentials --resource-group euroins-rg-prod --name euroins-aks-prod```
-5. Create service file in k8s":
+6. Create service file in k8s":
     - ```kubectl create -f Manifests/NAMESPACE/service.yaml -n NAMESPACE```
     - ```kubectl create -f Manifests/dev/service.yaml -n dev```
-6. If service file is only modified:
+7. If service file is only modified:
     - ```kubectl apply -f Manifests/NAMESPACE/service.yaml -n NAMESPACE```
     - ```kubectl apply -f Manifests/dev/service.yaml -n dev```
-7. Check if service is created:
+8. Check if service is created:
     - ```kubectl get service -n dev```
-8. Describe for check service:
+9. Describe for check service:
     - ```kubectl describe service SERVICE_NAME-svc-NAMESPACE -n dev```
     - ```kubectl describe service admin-svc-dev -n dev```
-9. Edit service if is necessary:
+10. Edit service if is necessary:
     - ```kubectl edit service SERVICE_NAME-svc-NAMESPACE -n dev```
     - ```kubectl edit service admin-svc-dev -n dev```
 
