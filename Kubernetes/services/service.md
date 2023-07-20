@@ -1,5 +1,7 @@
 ### Kind Service (service.yaml)
 
+---
+
 Convention for naming - only CamelCase is for change:
 
     NAME                            EXAMPLE

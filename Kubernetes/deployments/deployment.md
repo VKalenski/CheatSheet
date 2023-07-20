@@ -1,5 +1,7 @@
 ### Kind Deployment (deployment.yaml)
 
+---
+
 Convention for naming - only CamelCase is for change:
 
     NAME                                        EXAMPLE
