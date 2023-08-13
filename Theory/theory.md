@@ -11,25 +11,41 @@ x. pgAdmin (free):                  https://www.pgadmin.org/download/
 x.
 x.
 
+---
+
+### Setup Packages in PowerShell
+
+x. Base64 encoder/decoder:          https://community.chocolatey.org/packages/base64
+x. cURL:                            https://community.chocolatey.org/packages/curl
+x. acme.sh:                         https://community.chocolatey.org/packages/acme-sh
+x. GNU grep:                        https://community.chocolatey.org/packages/grep
+x.
+x.
+
+---
+
 ### Theory
 
 ---
 
 CLI     -   Command Line Interface
-CMD     -
+CMD     -   Command Prompt
 API     -   Application Programming Interface
 JSON    -   JavaScript Object Notation (Текстово базиран отворен стандарт)
-XML     -
+XML     -   Extensible Markup Language
 DI      -   Dependency Injection (Внедрени зависимост)
-CI/CD   -   Continuous integration / Continuous Delivery
+CI/CD   -   Continuous Integration / Continuous Delivery
 DTO     -   Data Transfer Objects
 CSV     -   Comma-Separated Values
 K8s     -   Kubernetes
 SSL     -   Secure Sockets Layer
 TLS     -   Transport Layer Security
-IDE     -
-IaC     -   Infrastructure as Code*
+IDE     -   Integrated Development Environment
+IaC     -   Infrastructure as Code
 SDLC    -   Software Development Life Cycle
+BDD     -   Behavior-driven development
+FCL     -   Framework Class Library
+Common Language Runtime (CLR)
 
 ASP.NET - web application framework which was released as part of the .NET framework.
 ASP.NET Core - cross-platform, high-performance and open-source web application framework. First version: 2016
@@ -38,4 +54,3 @@ ASP.NET Core - cross-platform, high-performance and open-source web application 
 
 
 CI is used during the build and test phase. CD is used once changes are committed.
-
