@@ -101,6 +101,9 @@ Necessary Extensions:
         - ID:  zxh404.vscode-proto3
         - URL: https://marketplace.visualstudio.com/items?itemName=zxh404.vscode-proto3
 
+    - Python
+        - ID:  ms-python.python
+        - URL: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
 
 
