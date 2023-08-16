@@ -8,19 +8,28 @@ x. Web Browser or API Client:
     - Postman  (free):              https://www.postman.com/downloads/
     - Insomnia (free):              https://insomnia.21rest/download/
 x. pgAdmin (free):                  https://www.pgadmin.org/download/
-x.
-x.
+x. Docker (free):                   https://www.docker.com/products/docker-desktop/
+x. Helm (free):                     https://github.com/helm/helm/releases/
+x. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cgi/
+
+
 
 ---
 
 ### Setup Packages in PowerShell
 
-x. Base64 encoder/decoder:          https://community.chocolatey.org/packages/base64
-x. cURL:                            https://community.chocolatey.org/packages/curl
-x. acme.sh:                         https://community.chocolatey.org/packages/acme-sh
-x. GNU grep:                        https://community.chocolatey.org/packages/grep
-x.
-x.
+x. Base64 encoder/decoder:  choco install base64            https://community.chocolatey.org/packages/base64
+x. cURL:                    choco install curl              https://community.chocolatey.org/packages/curl
+x. acme.sh:                 choco install acme-sh           https://community.chocolatey.org/packages/acme-sh
+x. GNU grep:                choco install grep              https://community.chocolatey.org/packages/grep
+x. kui:                     choco install kui               https://community.chocolatey.org/packages/kui
+x. kubescape                choco install kubescape         https://community.chocolatey.org/packages/kubescape
+x. k9s                      choco install k9s               https://community.chocolatey.org/packages/k9s
+
+
+
+
+
 
 ---
 
