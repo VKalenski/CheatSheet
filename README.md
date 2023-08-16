@@ -1,4 +1,4 @@
-## Command Line Commands
+## **Command Line Commands**
 
 >[1. Git](#git)
 >
@@ -21,7 +21,7 @@
 ### [🔼 Back to top](#commands)
 ---
 
-### Git:
+### **Git:**
 
 Start administrator PowerShell and Install GitHub CLI: https://github.com/cli/cli ---> Chocolatey: ```choco install gh```
 
@@ -98,7 +98,7 @@ Table for ```LOG``` commands:
 ### [🔼 Back to top](#commands)
 ---
 
-### Minikube:
+### **Minikube:**
 
 Start administrator PowerShell
 
@@ -114,7 +114,7 @@ Start administrator PowerShell
 ### [🔼 Back to top](#commands)
 ---
 
-### .NET:
+### **.NET:**
 
 |Description|Commands|
 |--|--|
@@ -171,7 +171,7 @@ dotnet add package ...
 ### [🔼 Back to top](#commands)
 ---
 
-### Docker:  
+### **Docker:**
 
 |Description|Commands|
 |--|--|
@@ -215,10 +215,10 @@ dotnet add package ...
 ### [🔼 Back to top](#commands)
 ---
 
-### Azure:
+### **Azure:**
 
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
-  
+
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
 
 Start PowerShell
@@ -277,7 +277,7 @@ Table for ```OTHER``` commands:
 ### [🔼 Back to top](#commands)
 ---
 
-### Kubernetes:
+### **Kubernetes:**
 https://kubernetes.io/docs/reference/kubectl/
 
 Start PowerShell
@@ -353,10 +353,10 @@ Table for ```OTHERS``` commands
 |Description|Command|
 |--|--|
 |--|kubectl rollout restart deploy <name-deploy>|
-|Apply .yml file:|kubectl apply -f .\xxx.yml|  
+|Apply .yml file:|kubectl apply -f .\xxx.yml|
 |Deploy microservices to AKS:|kubectl apply -f .\aks\|
 |--|kubectl config get-contexts|
-|--|kubectl config current-context|  
+|--|kubectl config current-context|
 |--|kubectl config use-context gcpcluster-k8s-1|
 |--|kubectl delete deployment swn-nginx|
 |--|kubectl create deployment mongo-depl --image=mongo|
@@ -367,7 +367,7 @@ Table for ```OTHERS``` commands
 ### [🔼 Back to top](#commands)
 ---
 
-### PowerShell:
+### **PowerShell:**
 
 Start PowerShell
 
@@ -382,7 +382,7 @@ Table for ```CHANGE``` commands:
 ### [🔼 Back to top](#commands)
 ---
 
-### Linux:
+### **Linux:**
 
 Table for ```CHANGE``` commands:
 
