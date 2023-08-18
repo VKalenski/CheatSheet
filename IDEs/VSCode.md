@@ -56,7 +56,7 @@ Necessary Extensions:
     - Kubernetes
         - ID:  ms-kubernetes-tools.vscode-kubernetes-tools
         - URL: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
-//
+
     - Live Server
         - ID:  ritwickdey.LiveServer
         - URL: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
