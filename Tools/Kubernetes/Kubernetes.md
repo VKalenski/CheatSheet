@@ -30,15 +30,15 @@ Table for ```GET``` commands:
 
 |Description|Command|
 |--|--|
-|Show all namespaces:                               |kubectl get namespaces|
-|Show all namespaces:                               |kubectl get ns|
-|Show all service accounts:                         |kubectl get serviceAccounts|
-|Show all service accounts from current namespace:  |kubectl get serviceAccounts -n dev|
-|Show all nodes:                                    |kubectl get nodes|
-|Show all deployments:                              |kubectl get deployment|
-|Show all deployments from current namespace:       |kubectl get deployment -n dev|
-|Show all replicasets:                              |kubectl get replicaset|
-|Show all replicasets from current namespace:       |kubectl get replicaset -n dev|
+|Show all namespaces:                               |kubectl get namespaces --show-labels|
+|Show all namespaces:                               |kubectl get ns --show-labels|
+|Show all service accounts:                         |kubectl get serviceAccounts --show-labels|
+|Show all service accounts from current namespace:  |kubectl get serviceAccounts -n dev --show-labels|
+|Show all nodes:                                    |kubectl get nodes --show-labels|
+|Show all deployments:                              |kubectl get deployment --show-labels|
+|Show all deployments from current namespace:       |kubectl get deployment -n dev --show-labels|
+|Show all replicasets:                              |kubectl get replicaset --show-labels|
+|Show all replicasets from current namespace:       |kubectl get replicaset -n dev --show-labels|
 |Show all services:                                 |kubectl get services|
 |Show all services:                                 |kubectl get svc|
 |Show all services from current namespace:          |kubectl get svc -n dev|
@@ -92,6 +92,74 @@ Table for ```OTHERS``` commands
 |--|kubectl create deployment mongo-depl --image=mongo|
 |--|kubectl exec mongo-depl-5fd6b7d4b4-6xzjd -it sh|
 ||kubectl top pods -n dev|
+
+
+
+kubectl get pods euroins-ssp-api-deployment-stg-8685694f94-sgbgn -n stg -o yaml
+
+kubectl describe node aks-userpool-39914187-vmss00000q
+
+kubectl get nodes --show-labels
+
+kubectl get deploy,pods,svc,ing,node -n stg -o wide
+
+kubectl logs <pod-name> -c <container-name>
+
+kubectl get pod euroins-health-identity-deployment-stg-d74b596ff-b88jq -n stg -o json
+
+kubectl get pods --all-namespaces
+
+kubectl get pods --all-namespaces -o wide
+
+kubectl delete deployment depl-name
+
+kubectl get svc --all-namespaces
+
+kubectl api-resources
+		
+		kubectl api-resources -o wide
+
+        kubectl config view
+
+        kubectl get pods -n stg --sort-by='.status.containerStatuses[0].restartCount'
+		 
+		kubectl get pv --sort-by=.spec.capacity.storage
+		
+		kubectl get pods -n stg --field-selector=status.phase=Running
+
+        k logs ssp-identity-deployment-stg-6fff5fd764-jh2bx
+
+        k logs ssp-identity-deployment-stg-6fff5fd764-jh2bx > app.log
+
+        k logs ssp-identity-deployment-stg-6fff5fd764-jh2bx --previous > app.log
+		
+		k logs ssp-identity-deployment-stg-6fff5fd764-jh2bx --previous | sls error > app.log
+
+        kubectl get pdb -A
+
+
+
+        За достъпване на пода
+        kubectl -n dev exec --stdin --tty policy-deployment-dev-d47b9957-kmltm -- sh
+		ls
+		cat <filename.type> - без това -> cat appsettings.json
+
+
+        ДА сепроследи сайта дали работи
+		tracert https://devssp.eui-api.elando.eu/
+
+        За достъпване на редис
+		kubectl -n dev exec --stdin --tty notifications-deployment-dev-7965cbcbfb-rn8bt -- sh
+		cat appsettings.json
+
+
+
+        		htop
+
+                apt update
+
+                apt install htop
+
 
 ---
 ### [🔼 Back to top](#commands)
