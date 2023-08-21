@@ -80,6 +80,16 @@ Table for ```LOG``` commands:
 |--|git merge branch|
 |--|git blame|
 
+
+git reflog
+
+git reset --soft HEAD~1
+
+
+git show
+
+git rebase
+
 ---
 ### [🔼 Back to top](#commands)
 ---
