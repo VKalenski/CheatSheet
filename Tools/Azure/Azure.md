@@ -65,6 +65,27 @@ Table for ```OTHER``` commands:
 |                                         |az aks show --resource-group euroins-rg-staging --name euroins-aks-staging|
 |                                         |kubectl get pdb -A|
 
+
+az aks upgrade --resource-group euroins-rg-staging --name euroins-aks-staging --kubernetes-version 1.24.9
+
+az aks show --resource-group euroins-rg-staging --name euroins-aks-staging
+
+az aks get-upgrades --resource-group myResourceGroup --name myAKSCluster --output table
+
+az aks show --resource-group euroins-rg-staging --name euroins-aks-staging --output table
+
+az aks upgrade --kubernetes-version 1.24.9 --name euroins-aks-staging --resource-group euroins-rg-staging
+
+az aks install-cli
+		az aks list
+
+az aks get-credentials --admin --name MyManagedCluster --resource-group MyResourceGroup
+
+
+az monitor log-analytics workspace table list --resource-group euroins-rg-staging --workspace-name euroins --output table
+
+
+
 ---
 ### [🔼 Back to top](#commands)
 ---
