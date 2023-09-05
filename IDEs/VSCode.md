@@ -19,6 +19,11 @@ Ctrl K -> Ctrl D
 	Ctrl + MO -> Ctrl + MP - затваря и отваря методите
 
 
+    Ctrl + P -> @ for names, methods
+    Ctrl + G -> for rows
+    Alt + Click
+
+
 ---
 
 Necessary Extensions:
