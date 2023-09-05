@@ -13,7 +13,7 @@ trigger:
 resources:
 - repo: self
 
-variables:   
+variables:
   - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/development') }}:
     - template: templates/vars-dev.yaml #
   - ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/staging') }}:

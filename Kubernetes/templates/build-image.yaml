@@ -15,7 +15,7 @@ stages:
           containerRegistry: $(dockerRegistryServiceConnection)
           tags: |
             $(tag)
-            latest      
+            latest
       - upload: Manifests
         artifact: Manifests
         displayName: 'Upload Artifact: Manifests'

@@ -1,0 +1,42 @@
+# Template for Deployment with livenessProbe: TCP
+# Variables for change: EXAMPLE_NAME, NAMESPACE, K8S
+# Rows for change/check ---> #
+
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: DEPLOYMENT_NAME-deployment-NAMESPACE #
+  namespace: NAMESPACE #
+spec:
+  replicas: 1 #
+  strategy:
+    type: RollingUpdate #
+    rollingUpdate:
+      maxSurge: 1 #
+      maxUnavailable: 0 #
+  selector:
+    matchLabels:
+      app: APP_NAME-NAMESPACE #
+  template:
+    metadata:
+      labels:
+        app: LABEL_NAME-NAMESPACE #
+    spec:
+      containers:
+        - name: CONTAINER_NAME-NAMESPACE #
+          image: CONTAINER_REGISTRY_NAME.azurecr.io/IMAGE_NAME-NAMESPACE #
+          resources:
+            requests:
+              cpu: 100m #
+              memory: 128Mi #
+            limits:
+              cpu: 200m #
+              memory: 256Mi #
+          ports:
+          - containerPort: 80
+          livenessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5 #
+          periodSeconds: 15 #
+          failureThreshold: 1 #

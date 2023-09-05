@@ -6,16 +6,14 @@ metadata:
   namespace: stg
 spec:
   replicas: 1
-  securityContext:
-    runAsNonRoot: true
   selector:
     matchLabels:
       app: euroins-ssp-api-stg
   strategy:
-    type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
+      maxUnavailable: 0
+      maxSurge: 1
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -24,13 +22,12 @@ spec:
       containers:
       - name: euroins-ssp-api-stg
         image: euroinsprod.azurecr.io/euroins-ssp-api-stg
-        imagePullPolicy: Always
         resources:
           requests:
-            cpu: 100m
-            memory: 128Mi
+            cpu: "100m"
+            memory: 128Mi"
           limits:
-            cpu: 200m
-            memory: 256Mi
+            cpu: "200m"
+            memory: "512Mi"
         ports:
         - containerPort: 80
