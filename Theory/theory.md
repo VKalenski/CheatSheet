@@ -104,3 +104,5 @@ OWASP ASVS
 CVSS
 SSH
 SDLC - Software Development Life Cycle
+
+DLL - Dynamic Link Library
