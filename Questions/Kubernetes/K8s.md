@@ -29,7 +29,7 @@ https://www.vskills.in/practice/kubernetes-questions
 - They are key/value pairs attached to objects
 - Labels are used to organize and to select subsets of objects.
 - Labels can be attached to objects at creation time and subsequently added and modified at any time.
-- **None of these**
+- <span style="color: green">**None of these**</span>
 
 ---
 
@@ -37,7 +37,7 @@ https://www.vskills.in/practice/kubernetes-questions
 - Deployment
 - DaemonSet
 - StatefulSet
-- **All of these**
+- <font color="green">**All of these**</font>
 
 ---
 
