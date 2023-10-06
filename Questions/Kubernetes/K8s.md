@@ -33,7 +33,7 @@ https://www.vskills.in/practice/kubernetes-questions
 
 ---
 
-> 5. Which of the following is an higher-level abstraction in Kubernetes that rely on controllers to build upon the basic objects, and provide additional functionality and convenience features ?
+> 5. Which of the following is an higher-level abstraction in Kubernetes that rely on controllers to build upon the basic objects, and provide additional functionality and convenience features?
 - Deployment
 - DaemonSet
 - StatefulSet
