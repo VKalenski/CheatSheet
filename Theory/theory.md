@@ -16,7 +16,9 @@ x. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cg
 
 ---
 
-### **Setup Packages in Administrator PowerShell:**
+## **Chocolatey**
+
+**Setup Packages in Administrator PowerShell:**
 
 Install Chocolatey: https://community.chocolatey.org/
 
@@ -31,8 +33,17 @@ x. kubescape                choco install kubescape         https://community.ch
 x. k9s                      choco install k9s               https://community.chocolatey.org/packages/k9s
 x. kubeval                  choco install kubeval           https://community.chocolatey.org/packages/kubeval
 x. kubeconform              winget install YannHamon.kubeconform
+x. terraform                choco install -y terraform      https://community.chocolatey.org/packages/terraform
+x. civo                     choco install -y civo-cli       https://community.chocolatey.org/packages/civo-cli
 
 
+## **Scoop**
+
+**Setup Packages in PowerShell:**
+
+Install Scoop: iwr -useb get.scoop.sh | iex
+
+x. civo                     scoop install civo
 
 ---
 
@@ -81,6 +92,8 @@ SDLC    -   Software Development Life Cycle
 BDD     -   Behavior-driven development
 FCL     -   Framework Class Library
 CLR     -   Common Language Runtime
+ASDF    -   Advanced Scientific Data Format
+
 
 ASP.NET - web application framework which was released as part of the .NET framework.
 ASP.NET Core - cross-platform, high-performance and open-source web application framework. First version: 2016
