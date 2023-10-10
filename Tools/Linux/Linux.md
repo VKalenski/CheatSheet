@@ -9,7 +9,7 @@
 
 ### **Linux:**
 
-Table for ```CHANGE``` commands:
+Table for ```CHANGE``` Ubuntu commands:
 
 |Description|Command|
 |--|--|
