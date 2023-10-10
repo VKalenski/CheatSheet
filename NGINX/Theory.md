@@ -45,3 +45,7 @@ Worker processes: It actually does the processing of the requests.
 9) Explain how you can start Nginx through a different port other than 80?
 To start Nginx through a different port, you have to go to /etc/Nginx/sites-enabled/ and if this is the default file, then you have to open file called “default.” Edit the file and put the port you want Like server { listen 81; }
 
+13) Explain what is C10K problem?
+C10K problem is referred for the network socket unable to handle a large number of client (10,000) at the same time.
+
+
