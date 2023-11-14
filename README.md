@@ -27,7 +27,7 @@ Start administrator PowerShell and Install GitHub CLI: https://github.com/cli/cl
 
 ---
 
-Table for ```BASIC``` commands:
+Table for **```BASIC```** commands:
 
 |Description|Commands|
 |--|--|

@@ -1,16 +1,16 @@
 ### Setup Computer
 
-x. .NET 6 SDK (free)
-x. GitHub Desktop (free):           https://desktop.github.com/
-x. Visual Studio Community (free):  https://visualstudio.microsoft.com/downloads/
-x. Visual Studio Code (free):       https://code.visualstudio.com/download/
-x. Web Browser or API Client:
+1. .NET 6 SDK (free)
+2. GitHub Desktop (free):           https://desktop.github.com/
+3. Visual Studio Community (free):  https://visualstudio.microsoft.com/downloads/
+4. Visual Studio Code (free):       https://code.visualstudio.com/download/
+5. Web Browser or API Client:
     - Postman  (free):              https://www.postman.com/downloads/
     - Insomnia (free):              https://insomnia.21rest/download/
-x. pgAdmin (free):                  https://www.pgadmin.org/download/
-x. Docker (free):                   https://www.docker.com/products/docker-desktop/\
-x. Helm (free):                     https://github.com/helm/helm/releases/
-x. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cgi/
+6. pgAdmin (free):                  https://www.pgadmin.org/download/
+7. Docker (free):                   https://www.docker.com/products/docker-desktop/\
+8. Helm (free):                     https://github.com/helm/helm/releases/
+9. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cgi/
 
 
 
@@ -22,19 +22,21 @@ x. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cg
 
 Install Chocolatey: https://community.chocolatey.org/
 
-x. Base64 encoder/decoder:  choco install base64            https://community.chocolatey.org/packages/base64
-x. cURL:                    choco install curl              https://community.chocolatey.org/packages/curl
-x. acme.sh:                 choco install acme-sh           https://community.chocolatey.org/packages/acme-sh
-x. GNU grep:                choco install grep              https://community.chocolatey.org/packages/grep
-x. Kubernetes CLI:          choco install kubernetes-cli    https://community.chocolatey.org/packages/kubernetes-cli
-x. Minikube                 choco install minikube          https://community.chocolatey.org/packages/Minikube
-x. kui:                     choco install kui               https://community.chocolatey.org/packages/kui
-x. kubescape                choco install kubescape         https://community.chocolatey.org/packages/kubescape
-x. k9s                      choco install k9s               https://community.chocolatey.org/packages/k9s
-x. kubeval                  choco install kubeval           https://community.chocolatey.org/packages/kubeval
-x. kubeconform              winget install YannHamon.kubeconform
-x. terraform                choco install -y terraform      https://community.chocolatey.org/packages/terraform
-x. civo                     choco install -y civo-cli       https://community.chocolatey.org/packages/civo-cli
+|||||
+|--|--|--|--|
+|x. |Base64 encoder/decoder:  |choco install base64            |https://community.chocolatey.org/packages/base64|
+|x. |cURL:                    |choco install curl              |https://community.chocolatey.org/packages/curl|
+|x. |acme.sh:                 |choco install acme-sh           |https://community.chocolatey.org/packages/acme-sh|
+|x. |GNU grep:                |choco install grep              |https://community.chocolatey.org/packages/grep|
+|x. |Kubernetes CLI:          |choco install kubernetes-cli    |https://community.chocolatey.org/packages/kubernetes-cli|
+|x. |Minikube                 |choco install minikube          |https://community.chocolatey.org/packages/Minikube|
+|x. |kui:                     |choco install kui               |https://community.chocolatey.org/packages/kui|
+|x. |kubescape                |choco install kubescape         |https://community.chocolatey.org/packages/kubescape|
+|x. |k9s                      |choco install k9s               |https://community.chocolatey.org/packages/k9s|
+|x. |kubeval                  |choco install kubeval           |https://community.chocolatey.org/packages/kubeval|
+|x. |kubeconform              |winget install YannHamon.kubeconform||
+|x. |terraform                |choco install -y terraform      |https://community.chocolatey.org/packages/terraform|
+|x. |civo                     |choco install -y civo-cli       |https://community.chocolatey.org/packages/civo-cli|
 
 
 ## **Scoop**
