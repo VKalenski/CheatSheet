@@ -28,3 +28,14 @@ openssl genrsa -out cert-key.pem 4096
 ```
 
 openssl req -new -sha256 -subj "/CN=clcreative" key cert-key.pem -out cert.csr
+
+---
+
+Create SSH certificate about current machine
+
+1. Open PowerShell
+2. Copy command and run:
+```
+ssh-keygen -t rsa -b 4096 -C "test@mail.com"
+```
+3. Open .pub key and copy
