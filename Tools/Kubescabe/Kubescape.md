@@ -19,9 +19,9 @@ kubescape scan
 
 
 kubescape
-		
+
 		kubescape scan
-		
+
 		kubescape scan deployment.yml
-		
+
 		kubescape scan deployment.yml --verbose
