@@ -110,6 +110,10 @@ Necessary Extensions:
         - ID:  ms-python.python
         - URL: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 
+    - YAML
+        - ID:  redhat.vscode-yaml
+        - URL: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
 
 
 
