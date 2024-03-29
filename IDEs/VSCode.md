@@ -54,6 +54,18 @@ Necessary Extensions:
         - ID:  eamodio.gitlens
         - URL: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
+    - GitHub Actions
+        - ID:  github.vscode-github-actions
+        - URL: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
+
+    - Actionforge Graph Editor
+        - ID:  Actionforge.actionforge
+        - URL: https://marketplace.visualstudio.com/items?itemName=actionforge.actionforge
+
+    - GitHub Pull Requests
+        - ID:  GitHub.vscode-pull-request-github
+        - URL: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
+
     - Kubescape
         - ID:  kubescape.kubescape
         - URL: https://marketplace.visualstudio.com/items?itemName=kubescape.kubescape
@@ -113,6 +125,10 @@ Necessary Extensions:
     - YAML
         - ID:  redhat.vscode-yaml
         - URL: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
+    - vscode-pdf
+        - ID:  tomoki1207.pdf
+        - URL: https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
 
 
 
