@@ -1,11 +1,4 @@
-# **KUBESCAPE**
-
->[1. Kubescape](#kubescape)
->
-
----
-### [🔼 Back to top](#commands)
----
+# **Kubescape**
 
 > **Check for installation:**
 ```

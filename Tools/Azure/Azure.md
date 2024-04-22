@@ -1,13 +1,4 @@
-## **Command Line Commands**
-
->[5. Azure](#azure)
->
-
----
-### [🔼 Back to top](#commands)
----
-
-### **Azure:**
+# **Azure**
 
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
 
@@ -17,7 +8,7 @@ Start PowerShell
 
 ---
 
-Table for ```INSTALL```, ```UPDATE``` and ```LOGIN``` commands:
+### **INSTALL, UPDATE & LOGIN commands:**
 
 |Description|Commands|
 |--|--|
@@ -35,7 +26,7 @@ Table for ```INSTALL```, ```UPDATE``` and ```LOGIN``` commands:
 
 ---
 
-Table for ```CREATE``` commands:
+### **CREATE commands:**
 
 |Description|Commands|
 |--|--|
@@ -45,7 +36,7 @@ Table for ```CREATE``` commands:
 
 ---
 
-Table for ```OTHER``` commands:
+### **OTHERS commands:**
 
 |Description|Commands|
 |--|--|
@@ -83,9 +74,3 @@ az aks get-credentials --admin --name MyManagedCluster --resource-group MyResour
 
 
 az monitor log-analytics workspace table list --resource-group euroins-rg-staging --workspace-name euroins --output table
-
-
-
----
-### [🔼 Back to top](#commands)
----

@@ -1,15 +1,6 @@
-## **Command Line Commands**
+# **Linux**
 
->[8. Linux](#linux)
->
-
----
-### [🔼 Back to top](#commands)
----
-
-### **Linux:**
-
-Table for ```CHANGE``` Ubuntu commands:
+### **CHANGE Ubuntu commands:**
 
 |Description|Command|
 |--|--|
@@ -29,8 +20,6 @@ Table for ```CHANGE``` Ubuntu commands:
 ||code -r ConsoleName|
 az acr repository show --name euroins --repository vehicleservice
 az acr repository list -n euroins
-
-
 
 sudo apt install docker.io -y
 

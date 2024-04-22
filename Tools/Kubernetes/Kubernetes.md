@@ -4,7 +4,7 @@ https://kubernetes.io/docs/reference/kubectl/
 
 ---
 
-### **Table for ```INSTALL``` and ```LOGIN``` commands:**
+### **INSTALL & LOGIN commands:**
 
 |Command|Description|
 |-- |--|
@@ -18,7 +18,7 @@ https://kubernetes.io/docs/reference/kubectl/
 
 ---
 
-### **Table for ```GET``` commands:**
+### **GET commands:**
 
 |Command|Description|
 |--|--|
@@ -57,7 +57,7 @@ kubectl get pdb -A
 
 ---
 
-### **Table for ```DESCRIBE``` commands:**
+### **DESCRIBE commands:**
 
 |Command|Description|
 |--|--|
@@ -69,7 +69,7 @@ kubectl get pdb -A
 
 ---
 
-### **Table for ```LOGS``` commands:**
+### **LOGS commands:**
 
 |Command|Description|
 |--|--|
@@ -83,16 +83,16 @@ kubectl get pdb -A
 
 ---
 
-### **Table for ```DELETE``` commands:**
+### **DELETE commands:**
 
 |Command|Description|
 |--|--|
-|kubectl delete deployment <name-deployment> -n dev         |Delete deployment|
-|kubectl delete deployment <name-pod> -n dev               |Delete deployment|
+|kubectl delete deployment <name-deployment> -n dev        |Delete deployment|
+|kubectl delete deployment <name-pod> -n dev               |Delete pod|
 
 ---
 
-### **Table for ```OTHERS``` commands:**
+### **OTHERS commands:**
 
 |Command|Description|
 |--|--|

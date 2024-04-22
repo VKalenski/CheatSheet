@@ -39,7 +39,6 @@ Install Chocolatey: https://community.chocolatey.org/
 |x. |kubeconform              |winget install -y YannHamon.kubeconform||
 |x. |terraform                |choco install -y terraform         |https://community.chocolatey.org/packages/terraform|
 |x. |civo                     |choco install -y civo-cli          |https://community.chocolatey.org/packages/civo-cli|
-|x. |nvm                      |choco install nvm                  |https://community.chocolatey.org/packages/nvm|
 
 
 ## **Scoop**
@@ -72,55 +71,3 @@ x. Krew
 )
 
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/#bash
-
----
-
-### Theory
-
----
-
-CLI     -   Command Line Interface
-CMD     -   Command Prompt
-API     -   Application Programming Interface
-JSON    -   JavaScript Object Notation (Текстово базиран отворен стандарт)
-XML     -   Extensible Markup Language
-DI      -   Dependency Injection (Внедрени зависимост)
-CI/CD   -   Continuous Integration / Continuous Delivery
-DTO     -   Data Transfer Objects
-CSV     -   Comma-Separated Values
-K8s     -   Kubernetes
-SSL     -   Secure Sockets Layer
-TLS     -   Transport Layer Security
-IDE     -   Integrated Development Environment
-IaC     -   Infrastructure as Code
-SDLC    -   Software Development Life Cycle
-BDD     -   Behavior-driven development
-FCL     -   Framework Class Library
-CLR     -   Common Language Runtime
-ASDF    -   Advanced Scientific Data Format
-
-
-ASP.NET - web application framework which was released as part of the .NET framework.
-ASP.NET Core - cross-platform, high-performance and open-source web application framework. First version: 2016
-
-
-
-
-CI is used during the build and test phase. CD is used once changes are committed.
-
-
-
-
-SAST - Static Application Security Testing
-DAST
-SCA
-OWASP
-CIS
-CISA
-OWASP ZAP
-OWASP ASVS
-CVSS
-SSH
-SDLC - Software Development Life Cycle
-
-DLL - Dynamic Link Library

@@ -1,6 +1,6 @@
+# **K9s**
 
-
-# List all available CLI options
+### List all available CLI options
 		k9s help
 
 		# Get info about K9s runtime (logs, configs, etc..)
