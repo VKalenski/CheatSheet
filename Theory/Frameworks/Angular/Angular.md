@@ -4,14 +4,16 @@ https://angular.io/
 
 ---
 
-|Commands                                                          |Description            |
-|--                                                                |--                     |
-|npm install -g @angular/cli                                       |Install the latest Angular CLI version|
-|ng new my-first-app --no-strict --standalone false --routing false|Create first Angular project   |
-|cd my-first-app                                                   |Go to the project      |
-|ng serve                                                          |Run the Angular project|
-|npm outdated|                                                     |Check outdated packages|
-|npm update|                                                       |Update outdated packages|
+|Commands                                                           |Description                             |
+|--                                                                 |--                                      |
+|npm install -g @angular/cli                                        |Install the latest Angular CLI version  |
+|ng new my-first-app --no-strict --standalone false --routing false |Create first Angular project            |
+|cd my-first-app                                                    |Go to the project                       |
+|ng serve                                                           |Run the Angular project                 |
+|npm outdated                                                       |Check outdated packages                 |
+|npm update                                                         |Update outdated packages                |
+|ng versions                                                        |Check Angular versions                  |
+|||
 
 After start the application you have this options from CLI:
 press h + enter to show help

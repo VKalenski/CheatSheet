@@ -15,15 +15,11 @@
 
 https://chocolatey.org/
 
-##### [🔼 Back to top](#chocolatey)
-
 ---
 
 ### **Chocolatey Theory**
 
 The Package Manager for Windows
-
-##### [🔼 Back to top](#chocolatey)
 
 ---
 
@@ -37,8 +33,6 @@ https://chocolatey.org/install
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-##### [🔼 Back to top](#chocolatey)
-
 ---
 
 ### **Chocolatey Commands**
@@ -49,3 +43,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 |choco -?       |Check installation|
 
  ##### [🔼 Back to top](#chocolatey)
+
+---
+
+### **Commands:**
+
