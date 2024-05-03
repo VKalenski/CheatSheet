@@ -40,6 +40,7 @@ Install Chocolatey: https://community.chocolatey.org/
 |x. |terraform                |choco install -y terraform         |https://community.chocolatey.org/packages/terraform|
 |x. |civo                     |choco install -y civo-cli          |https://community.chocolatey.org/packages/civo-cli|
 |x. |nvm                      |choco install nvm                  |https://community.chocolatey.org/packages/nvm|
+|x. |nvm                      |choco install nodejs               ||
 
 
 ## **Scoop**
