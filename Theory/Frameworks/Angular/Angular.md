@@ -18,6 +18,7 @@ https://update.angular.io/
 |ng new my-first-app --no-strict --standalone false --routing false |Create first Angular project            |
 |cd my-first-app                                                    |Go to the project                       |
 |ng serve                                                           |Run the Angular project                 |
+|ng update                                                          |Update the Angular version              |
 |npm outdated                                                       |Check outdated packages                 |
 |npm update                                                         |Update outdated packages                |
 |||
