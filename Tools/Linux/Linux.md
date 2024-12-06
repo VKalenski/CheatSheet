@@ -24,3 +24,7 @@ az acr repository list -n euroins
 sudo apt install docker.io -y
 
 sudo apt install docker-compose -y
+
+
+Проверка на съдържанието на файл
+cat text.txt
