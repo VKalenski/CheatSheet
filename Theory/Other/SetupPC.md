@@ -1,18 +1,21 @@
 ### Setup Computer
 
-1. .NET 6 SDK (free)
-2. GitHub Desktop (free):           https://desktop.github.com/
-3. Visual Studio Community (free):  https://visualstudio.microsoft.com/downloads/
-4. Visual Studio Code (free):       https://code.visualstudio.com/download/
-5. Web Browser or API Client:
-    - Postman  (free):              https://www.postman.com/downloads/
-    - Insomnia (free):              https://insomnia.21rest/download/
-6. pgAdmin (free):                  https://www.pgadmin.org/download/
-7. Docker (free):                   https://www.docker.com/products/docker-desktop/
-8. Helm (free):                     https://github.com/helm/helm/releases/
-9. JMeter (free):                   https://jmeter.apache.org/download_jmeter.cgi/
-
-
+|N  | **Commands**                    | **Links**                                               |
+|:--|                                 | :--                                                     |
+|x. | .NET 6.0 SDK (free)             | https://dotnet.microsoft.com/en-us/download/dotnet/6.0  |
+|x. | .NET 8.0 SDK (free)             | https://dotnet.microsoft.com/en-us/download/dotnet/8.0  |
+|x. | .NET 9.0 SDK (free)             | https://dotnet.microsoft.com/en-us/download/dotnet/9.0  |
+|x. | GitHub Desktop (free)           | https://desktop.github.com/                             |
+|x. | Visual Studio Community (free)  | https://visualstudio.microsoft.com/downloads/           |
+|x. | Visual Studio Code (free)       | https://code.visualstudio.com/download/                 |
+|x  | Api Client Postman (free)       | https://www.postman.com/downloads/                      |
+|x  | Api Client Insomnia (free)      | https://insomnia.21rest/download/                       |
+|x. | pgAdmin (free)                  | https://www.pgadmin.org/download/                       |
+|x. | Docker (free)                   | https://www.docker.com/products/docker-desktop/         |
+|x. | Helm (free)                     | https://github.com/helm/helm/releases/                  |
+|x. | Headlamp (free)                 | https://headlamp.dev/                                   |
+|x. | JMeter (free)                   | https://jmeter.apache.org/download_jmeter.cgi/          |
+|x. | WinMerge (free)                 | https://winmerge.org/                                   |
 
 ---
 
@@ -20,34 +23,36 @@
 
 **Setup Packages in Administrator PowerShell:**
 
-Install Chocolatey: https://community.chocolatey.org/
+Open **Administator** Terminal
+**Install Chocolatey:** https://community.chocolatey.org/
 
-|||||
-|--|--|--|--|
-|x. |Base64 encoder/decoder:  |choco install -y base64            |https://community.chocolatey.org/packages/base64|
-|x. |cURL:                    |choco install -y curl              |https://community.chocolatey.org/packages/curl|
-|x. |acme.sh:                 |choco install -y acme-sh           |https://community.chocolatey.org/packages/acme-sh|
-|x. |GNU grep:                |choco install -y grep              |https://community.chocolatey.org/packages/grep|
-|x. |Kubernetes CLI:          |choco install -y kubernetes-cli    |https://community.chocolatey.org/packages/kubernetes-cli|
-|x. |Kubernetes HELM CLI:     |choco install -y kubernetes-helm   |https://community.chocolatey.org/packages/kubernetes-helm|
-|x. |GitHub CLI:              |choco install gh                   |https://community.chocolatey.org/packages/gh|
-|x. |Minikube                 |choco install -y minikube          |https://community.chocolatey.org/packages/Minikube|
-|x. |kui:                     |choco install -y kui               |https://community.chocolatey.org/packages/kui|
-|x. |kubescape                |choco install -y kubescape         |https://community.chocolatey.org/packages/kubescape|
-|x. |k9s                      |choco install -y k9s               |https://community.chocolatey.org/packages/k9s|
-|x. |kubeval                  |choco install -y kubeval           |https://community.chocolatey.org/packages/kubeval|
-|x. |kubeconform              |winget install -y YannHamon.kubeconform||
-|x. |terraform                |choco install -y terraform         |https://community.chocolatey.org/packages/terraform|
-|x. |civo                     |choco install -y civo-cli          |https://community.chocolatey.org/packages/civo-cli|
+|N  | **Commands**                 | **Command**                        | **Links**                                                 |
+|-- | :--                          | :--                                | :--                                                       |
+|x. | **acme.sh**                  | choco install -y acme-sh           | https://community.chocolatey.org/packages/acme-sh         |
+|x. | **Base64 encoder/decoder**   | choco install -y base64            | https://community.chocolatey.org/packages/base64          |
+|x. | **civo**                     | choco install -y civo-cli          | https://community.chocolatey.org/packages/civo-cli        |
+|x. | **GitHub CLI**               | choco install -y gh                | https://community.chocolatey.org/packages/gh              |
+|x. | **GNU grep**                 | choco install -y grep              | https://community.chocolatey.org/packages/grep            |
+|x. | **Kubernetes CLI**           | choco install -y kubernetes-cli    | https://community.chocolatey.org/packages/kubernetes-cli  |
+|x. | **Kubernetes HELM CLI**      | choco install -y kubernetes-helm   | https://community.chocolatey.org/packages/kubernetes-helm |
+|x. | **kubescape**                | choco install -y kubescape         | https://community.chocolatey.org/packages/kubescape       |
+|x. | **k9s**                      | choco install -y k9s               | https://community.chocolatey.org/packages/k9s             |
+|x. | **kubeval**                  | choco install -y kubeval           | https://community.chocolatey.org/packages/kubeval         |
+|x. | **Minikube**                 | choco install -y minikube          | https://community.chocolatey.org/packages/Minikube        |
+|x. | **terraform**                | choco install -y terraform         | https://community.chocolatey.org/packages/terraform       |
+|x. | **kui**                      | choco install -y kui               | https://community.chocolatey.org/packages/kui             |
+|x. | **cURL**                     | choco install -y curl              | https://community.chocolatey.org/packages/curl            |
 
+---
 
 ## **Scoop**
 
 **Setup Packages in PowerShell:**
 
-Install Scoop: iwr -useb get.scoop.sh | iex
+**Install Scoop:** iwr -useb get.scoop.sh | iex
 
 x. civo                     scoop install civo
+|x. |kubeconform              |winget install -y YannHamon.kubeconform||
 
 ---
 
