@@ -25,12 +25,12 @@
 
 >**Link installment:** https://helm.sh/docs/intro/install/
 
-|**Commands**						|**Operation System**	|**Terminal**|
-|:--								|:--					|:--|
-|choco install kubernetes-helm		|Windows				|Administrative PowerShell|
-|scoop install helm					|Windows				|Administrative PowerShell|
-|sudo snap install helm --classic	|Linux					|-|
-|brew install helm					|MacOS					|-|
+|**Commands**						| **Operation System**	| **Terminal**              |
+|:--								| :--					| :--                       |
+|choco install kubernetes-helm		| Windows				| Administrative PowerShell |
+|scoop install helm					| Windows				| Administrative PowerShell |
+|sudo snap install helm --classic	| Linux					| -                         |
+|brew install helm					| MacOS					| -                         |
 
 ##### [🔼 Back to top](#helm)
 
@@ -58,14 +58,14 @@ For Helm, there are three important concepts:
 
 ### **Helm Commands**
 
-|**Commands**				|**Description**|
-|:-- 						|:-- |
-|helm --help				||
-|helm version				||
-|helm list					||
-|helm repo list			    ||
-|helm version				||
-|helm repo update			||
+|**Commands**				|**Description** |
+|:-- 						|:--             |
+|helm --help				|                |
+|helm version				|                |
+|helm list					|                |
+|helm repo list			    |                |
+|helm version				|                |
+|helm repo update			|                |
 
 ##### [🔼 Back to top](#helm)
 

@@ -1,8 +1,5 @@
 # **Notepad++**
 
-|Commands   |Descriptions|
-|:--        |:--|
-|Ctrl + Q   |Make a comment|
-|||
-|||
-
+|Commands   |Descriptions   |
+|:--        |:--            |
+|Ctrl + Q   |Make a comment |
