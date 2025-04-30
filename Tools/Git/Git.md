@@ -10,6 +10,7 @@ Start administrator PowerShell and Install GitHub CLI: https://github.com/cli/cl
 |--                                     | --                         |
 |gh --version                           | Check GitHub CLI version   |
 |gh auth login                          | Login in GitHub account    |
+|gh auth status                         | Check the GitHub account   |
 
 ---
 
