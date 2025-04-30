@@ -20,36 +20,36 @@ https://kubernetes.io/docs/reference/kubectl/
 
 ### **GET commands:**
 
-|**Commands**                                                                      | **Description**                                     |
-|--                                                                                | --                                                  |
-|``kubectl get namespaces --show-labels``                                          | Show all namespaces                                 |
-|``kubectl get ns --show-labels``                                                  | Show all namespaces                                 |
-|``kubectl get serviceAccounts --show-labels``                                     | Show all service accounts                           |
-|``kubectl get serviceAccounts -n dev --show-labels``                              | Show all service accounts from current namespace    |
-|``kubectl get nodes --show-labels``                                               | Show all nodes                                      |
-|``kubectl get deployment --show-labels``                                          | Show all deployments                                |
-|``kubectl get deployment -n dev --show-labels``                                   | Show all deployments from current namespace         |
-|``kubectl get replicaset --show-labels``                                          | Show all replica                                    |
-|``kubectl get replicaset -n dev --show-labels``                                   | Show all replica sets from current namespace        |
-|``kubectl get services``                                                          | Show all services                                   |
-|``kubectl get svc``                                                               | Show all services in default namespace              |
-|``kubectl get svc --all-namespaces``                                              | Show all services in all namespace                  |
-|``kubectl get svc -n dev``                                                        | Show all services from current namespace            |
-|``kubectl get pods``                                                              | Show all pods                                       |
-|``kubectl get pods -n dev``                                                       | Show all pods from current namespace                |
-|``kubectl get pods -n dev -o wide``                                               | Show all pods from current namespace extend         |
-|``kubectl get pods -n dev -o yaml``                                               | Show all pods from current namespace extend         |
-|``kubectl get pods -n dev -o json``                                               | Show all pods from current namespace extend         |
-|``kubectl get pods --all-namespaces``                                             | Show all pods from all namespace                    |
-|``kubectl get pods --all-namespaces -o wide``                                     | Show all pods from all namespace extend             |
-|``kubectl get pods --watch``                                                      | Show all pods                                       |
-|``kubectl get secrets``                                                           | Show all secrets                                    |
-|``kubectl get secrets -n dev``                                                    | Show all secrets in current namespace               |
-|``kubectl get secret default-token-htr5s -n dev``                                 | Show secret/token with current secret name          |
-|``kubectl get secret default-token-htr5s -n dev -o json``                         | Show secret/token with current secret name extend   |
-|``kubectl get all``                                                               | Show all in all namespaces                          |
-|``kubectl get all -n dev``                                                        | Show all in current namespace                       |
-|``kubectl get storageclass``                                                      | Show all storageclass in current namespace          |
+|**Commands**                                                                        | **Description**                                     |
+|--                                                                                  | --                                                  |
+|```kubectl get namespaces --show-labels```                                          | Show all namespaces                                 |
+|```kubectl get ns --show-labels```                                                  | Show all namespaces                                 |
+|```kubectl get serviceAccounts --show-labels```                                     | Show all service accounts                           |
+|```kubectl get serviceAccounts -n dev --show-labels```                              | Show all service accounts from current namespace    |
+|```kubectl get nodes --show-labels```                                               | Show all nodes                                      |
+|```kubectl get deployment --show-labels```                                          | Show all deployments                                |
+|```kubectl get deployment -n dev --show-labels```                                   | Show all deployments from current namespace         |
+|```kubectl get replicaset --show-labels```                                          | Show all replica                                    |
+|```kubectl get replicaset -n dev --show-labels```                                   | Show all replica sets from current namespace        |
+|```kubectl get services```                                                          | Show all services                                   |
+|```kubectl get svc```                                                               | Show all services in default namespace              |
+|```kubectl get svc --all-namespaces```                                              | Show all services in all namespace                  |
+|```kubectl get svc -n dev```                                                        | Show all services from current namespace            |
+|```kubectl get pods```                                                              | Show all pods                                       |
+|```kubectl get pods -n dev```                                                       | Show all pods from current namespace                |
+|```kubectl get pods -n dev -o wide```                                               | Show all pods from current namespace extend         |
+|```kubectl get pods -n dev -o yaml```                                               | Show all pods from current namespace extend         |
+|```kubectl get pods -n dev -o json```                                               | Show all pods from current namespace extend         |
+|```kubectl get pods --all-namespaces```                                             | Show all pods from all namespace                    |
+|```kubectl get pods --all-namespaces -o wide```                                     | Show all pods from all namespace extend             |
+|```kubectl get pods --watch```                                                      | Show all pods                                       |
+|```kubectl get secrets```                                                           | Show all secrets                                    |
+|```kubectl get secrets -n dev```                                                    | Show all secrets in current namespace               |
+|```kubectl get secret default-token-htr5s -n dev```                                 | Show secret/token with current secret name          |
+|```kubectl get secret default-token-htr5s -n dev -o json```                         | Show secret/token with current secret name extend   |
+|```kubectl get all```                                                               | Show all in all namespaces                          |
+|```kubectl get all -n dev```                                                        | Show all in current namespace                       |
+|```kubectl get storageclass```                                                      | Show all in current namespace                       |
 
 
 kubectl get pods -n stg --field-selector=status.phase=Running
